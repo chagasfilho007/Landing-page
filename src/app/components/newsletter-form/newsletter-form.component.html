@@ -1,0 +1,23 @@
+<section class="form-section" >
+    <div class="text">
+        <h3>
+            Fique por dentro de tendências
+        </h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, accusamus? Nobis quasi, perferendis dolores eligendi praesentium quos obcaecati ea doloremque vel earum laborum, deserunt repellendus animi iste ipsum, eum ducimus!</p>
+    </div>
+    <form [formGroup]="newsletterForm" (ngSubmit)="onSubmit()">
+        <label for="name">Name</label>
+        <input id="name" formControlName="name"/>
+        <label for="email">Email</label>
+        <input id="email" formControlName="email"/>
+        <app-btn-primary 
+            btn-text="se inscreva" 
+            variant="secondary" 
+            [disabled]="!newsletterForm.valid" 
+            [loading]="loading()"
+        >
+        </app-btn-primary>
+    </form>
+</section>
+
+
