@@ -42,8 +42,7 @@
               "includePaths": [
                 "src"
               ]
-            },
-            "baseHref": "https://chagasfilho007.github.io/Landing-page/"
+            }
           },
           "configurations": {
             "production": {
